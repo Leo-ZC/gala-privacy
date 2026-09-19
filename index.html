@@ -115,7 +115,7 @@
   <h3>3.3 应用内购买（会员功能）</h3>
   <ul>
     <li>支付由 <strong>Apple App Store / Google Play</strong> 完成，我们<strong>不接触也不保存</strong>你的支付方式、卡号等任何支付信息。</li>
-    <li>购买与恢复购买时，App 会向商店服务查询商品与交易状态；会员是否开通只记录在你的本机。</li>
+    <li>购买与恢复购买时，App 会向商店服务查询商品与交易状态；会员是否开通记录在你的本机，并会在订阅到期后向商店核对一次是否已续费。</li>
   </ul>
 
   <h2>4. 第三方服务清单</h2>
@@ -184,7 +184,7 @@
       <li><strong>Weather lookup (on your action):</strong> your current <strong>latitude/longitude</strong> is sent to the public weather service <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> to return the current temperature and condition. No name, account, device identifier or diary content is included.</li>
       <li><strong>System geocoding:</strong> converting coordinates to a place name uses the operating system's geocoder (Apple's <code>CLGeocoder</code> on iOS).</li>
       <li><strong>Cloud backup (member, off by default):</strong> you enter your own WebDAV / S3 storage. The archive is <strong>AES-256 encrypted on your device</strong> before upload; data goes directly from your device to your own storage, never through us.</li>
-      <li><strong>In-app purchase:</strong> payment is handled by the Apple App Store / Google Play. We never receive your payment details; membership status is stored only on your device.</li>
+      <li><strong>In-app purchase:</strong> payment is handled by the Apple App Store / Google Play. We never receive your payment details; membership status is stored on your device, and is checked once with the store when a subscription expires to see whether it was renewed.</li>
     </ul>
 
     <h2>4. Data sharing and storage</h2>
