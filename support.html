@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>旮旯 支持中心</title>
+<style>
+  :root {
+    --body: #333;
+    --muted: #6b6b6b;
+    --accent: #c8562f;
+    --line: #e8e2da;
+    --bg: #fdfbf8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--body);
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB",
+                 "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.85;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 20px 72px; }
+  h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: .5px; }
+  .meta { color: var(--muted); font-size: 14px; margin-bottom: 28px; }
+  h2 {
+    font-size: 18px; margin: 36px 0 10px; padding-top: 18px;
+    border-top: 1px solid var(--line);
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  h3 { font-size: 16px; margin: 22px 0 6px; }
+  p, li { margin: 8px 0; }
+  ul { padding-left: 22px; }
+  .lead {
+    background: #fff; border: 1px solid var(--line); border-radius: 10px;
+    padding: 16px 18px; margin: 0 0 24px;
+  }
+  .lead p { margin: 0; }
+  a { color: var(--accent); }
+  .en { margin-top: 56px; padding-top: 8px; border-top: 2px solid var(--line); }
+  .en h1 { font-size: 22px; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 13px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>旮旯 支持中心</h1>
+  <div class="meta">最后更新：2026 年 9 月 19 日</div>
+
+  <div class="lead">
+    <p><strong>需要帮助？</strong>先看看下面的常见问题。若仍未解决，欢迎直接发邮件给我们，我们会在 3 个工作日内回复。</p>
+    <p>联系邮箱：<a href="mailto:gala.memory.lab@gmail.com">gala.memory.lab@gmail.com</a></p>
+  </div>
+
+  <h2>常见问题</h2>
+
+  <h3>1. 我的日记存在哪里？会被上传吗？</h3>
+  <p>日记正文保存在你设备本地的数据库中，图片保存在 App 沙盒目录里。旮旯没有账号体系，开发者也没有任何存放日记的服务器，因此无法读取、导出或恢复你的内容。</p>
+
+  <h3>2. 换手机了，日记怎么迁移？</h3>
+  <p>用「设置 → 本地备份与恢复」导出一份 ZIP 归档（含全部日记正文与图片），把文件传到新手机后，在新设备上用同一入口导入即可。</p>
+  <p>如果你开通了会员并使用云备份，也可以在新设备上填好同一网盘配置后直接从云端恢复。</p>
+
+  <h3>3. 本地备份和云备份有什么区别？</h3>
+  <ul>
+    <li><strong>本地备份（免费）</strong>：导出一个 ZIP 文件，保存在你自己的设备或你指定的位置，未加密，请自行妥善保管。</li>
+    <li><strong>云备份（会员）</strong>：由你填写自己的 WebDAV / S3 网盘地址，备份包在设备端经 AES-256 加密后上传到<strong>你自己的网盘</strong>。密钥只保存在本机，开发者无法解密。</li>
+  </ul>
+
+  <h3>4. 我忘了密码怎么办？</h3>
+  <p>旮旯没有账号，也没有登录密码，打开即用，所以不存在找回密码的问题。</p>
+
+  <h3>5. 会员包含哪些权益？</h3>
+  <ul>
+    <li>WebDAV / S3 云快照备份与云端恢复</li>
+    <li>速记：读取相册照片的拍摄时间与地点，一键生成对应日期的日记</li>
+    <li>自定义模板：把常用写法存成模板，写作时一键套用</li>
+    <li>日记分享：正文 + 最多 9 张图片，通过系统分享面板发送</li>
+    <li>会员主题：多套配色方案，跟随系统明暗切换</li>
+  </ul>
+  <p>日记编写、浏览、本地备份等核心功能<strong>永久免费</strong>。</p>
+
+  <h3>6. 怎么取消订阅？</h3>
+  <p>订阅由 App Store 管理。请在系统「设置 → Apple ID → 订阅」中找到旮旯的年度订阅并取消。取消后，当前已付费周期内仍可继续使用会员功能。</p>
+
+  <h3>7. 订阅到期后，我的日记会丢失吗？</h3>
+  <p>不会。订阅到期只是关闭会员功能，<strong>不会删除你的任何本地日记与图片</strong>。你可以继续免费使用日记的记录、浏览和本地备份。</p>
+
+  <h3>8. 我重装了 App，之前的购买还在吗？</h3>
+  <p>在会员页底部点击「恢复购买」即可找回。请确保使用购买时的同一个 Apple ID。</p>
+
+  <h3>9. 云备份该怎么配置？</h3>
+  <p>进入「设置 → 云备份」，选择 WebDAV 或 S3 兼容存储，填入你网盘的服务地址与账号信息。常见可用服务包括坚果云、Nextcloud、群晖、阿里云、腾讯云、Minio 等。若使用自建服务，地址可以是 <code>http://</code> 开头的局域网地址。</p>
+
+  <h3>10. 怎么彻底删除我的所有数据？</h3>
+  <p>「设置 → 清空全部数据」可以一次性删除所有日记与图片，该操作有两层确认且不可恢复，建议操作前先做一次本地备份。直接卸载 App 也会一并删除本机数据。</p>
+
+  <h3>11. 可以拒绝相册和定位权限吗？</h3>
+  <p>可以。相册权限用于选择照片加入日记、保存回顾长图；定位权限仅在你主动点击时读取一次，用于填写日记地点，不做后台定位。拒绝这些权限不影响日记的记录与浏览。</p>
+
+  <h3>12. App 会联网吗？</h3>
+  <p>仅在两种情况下联网，且都由你主动触发：查询天气时（把当前经纬度发送给公开天气服务 Open-Meteo，用于返回温度与天气状况）、开启云备份时。除此之外不发起任何网络请求，App 不含统计 SDK、广告 SDK，不进行用户追踪。</p>
+
+  <h3>13. 遇到崩溃或想提建议</h3>
+  <p>欢迎发邮件到 <a href="mailto:gala.memory.lab@gmail.com">gala.memory.lab@gmail.com</a>，如果能附上你的机型和系统版本，会帮我们更快定位问题。</p>
+
+  <h2>相关链接</h2>
+  <ul>
+    <li><a href="./index.html">隐私政策</a></li>
+    <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">使用条款（Apple 标准 EULA）</a></li>
+  </ul>
+
+  <!-- English -->
+  <div class="en">
+    <h1>GALA Support</h1>
+    <div class="meta">Last updated: September 19, 2026</div>
+
+    <div class="lead">
+      <p><strong>Need help?</strong> Check the FAQ below first. If your question isn't answered, email us and we'll get back to you within 3 business days.</p>
+      <p>Email: <a href="mailto:gala.memory.lab@gmail.com">gala.memory.lab@gmail.com</a></p>
+    </div>
+
+    <h2>FAQ</h2>
+
+    <h3>1. Where are my entries stored? Are they uploaded?</h3>
+    <p>Entries live in a local database on your device, and photos in the app's sandbox. GALA has no account system and we run no server that stores entries, so we cannot read, export or recover your content.</p>
+
+    <h3>2. I got a new phone — how do I move my entries?</h3>
+    <p>Use Settings → Local backup &amp; restore to export a ZIP archive containing all entries and photos, transfer the file to your new phone, then import it through the same screen.</p>
+    <p>If you have Pro with cloud backup, you can also enter the same storage settings on the new device and restore directly from the cloud.</p>
+
+    <h3>3. What's the difference between local and cloud backup?</h3>
+    <ul>
+      <li><strong>Local backup (free)</strong>: exports a ZIP file that you keep yourself. It is not encrypted, so store it safely.</li>
+      <li><strong>Cloud backup (Pro)</strong>: you enter your own WebDAV / S3 storage. The archive is AES-256 encrypted on-device before uploading to <strong>your own storage</strong>. The key never leaves your device and we cannot decrypt it.</li>
+    </ul>
+
+    <h3>4. I forgot my password</h3>
+    <p>There is no account and no password — GALA works right away, so there's nothing to recover.</p>
+
+    <h3>5. What does Pro include?</h3>
+    <ul>
+      <li>WebDAV / S3 snapshot backup and cloud restore</li>
+      <li>Quick Note: read a photo's capture time and place to create a dated entry in one tap</li>
+      <li>Custom templates you can apply while writing</li>
+      <li>Sharing: entry text plus up to 9 photos via the system share sheet</li>
+      <li>Pro themes that follow system light and dark</li>
+    </ul>
+    <p>Writing, browsing and local backup are <strong>free forever</strong>.</p>
+
+    <h3>6. How do I cancel my subscription?</h3>
+    <p>Subscriptions are managed by the App Store. Go to Settings → Apple ID → Subscriptions, find the GALA annual subscription and cancel it. You keep Pro features for the remainder of the paid term.</p>
+
+    <h3>7. Will I lose my entries when the subscription ends?</h3>
+    <p>No. When a subscription ends only the Pro features stop — <strong>none of your local entries or photos are deleted</strong>. You can keep using the journal, browsing and local backup for free.</p>
+
+    <h3>8. I reinstalled the app — is my purchase still there?</h3>
+    <p>Tap "Restore purchases" at the bottom of the membership page. Make sure you're signed in with the same Apple ID you purchased with.</p>
+
+    <h3>9. How do I set up cloud backup?</h3>
+    <p>Go to Settings → Cloud backup, choose WebDAV or S3-compatible storage, and enter your server address and credentials. Services like Nutstore, Nextcloud, Synology, Aliyun, Tencent Cloud and Minio all work. For self-hosted setups, a <code>http://</code> address on your local network is supported.</p>
+
+    <h3>10. How do I delete all my data?</h3>
+    <p>Settings → Clear all data removes every entry and photo at once. It requires two confirmations and cannot be undone, so consider making a local backup first. Uninstalling the app also removes local data.</p>
+
+    <h3>11. Can I decline the photo and location permissions?</h3>
+    <p>Yes. Photo access is used to add pictures to entries and to save review images; location is read once, only when you tap, to fill in the entry's place — never in the background. Declining either does not affect writing or browsing.</p>
+
+    <h3>12. Does the app go online?</h3>
+    <p>Only in two cases, both triggered by you: a weather lookup (your coordinates are sent to the public service Open-Meteo to return temperature and conditions) and cloud backup. Nothing else. There is no analytics SDK, no ad SDK and no user tracking.</p>
+
+    <h3>13. Crashes and feedback</h3>
+    <p>Email <a href="mailto:gala.memory.lab@gmail.com">gala.memory.lab@gmail.com</a>. Including your device model and OS version helps us track down issues faster.</p>
+
+    <h2>Links</h2>
+    <ul>
+      <li><a href="./index.html">Privacy policy</a></li>
+      <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of use (Apple standard EULA)</a></li>
+    </ul>
+  </div>
+
+  <footer>旮旯 · GALA</footer>
+
+</div>
+</body>
+</html>
