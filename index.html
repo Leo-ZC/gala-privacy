@@ -98,7 +98,7 @@
 
   <h3>3.1 查询天气（你主动触发时）</h3>
   <ul>
-    <li>当你获取天气时，App 会把当前<strong>经纬度</strong>发送给公开天气服务 <code>Open-Meteo</code>（<a href="https://open-meteo.com/" target="_blank" rel="noopener">open-meteo.com</a>），以获取当前温度与天气状况。</li>
+    <li>当你获取天气时，App 会把该地点的<strong>经纬度</strong>发送给公开天气服务 <code>Open-Meteo</code>（<a href="https://open-meteo.com/" target="_blank" rel="noopener">open-meteo.com</a>），以获取该时刻的温度与天气状况。查询当天用实况接口；查询过去的日期用其历史存档接口，因此从照片日记带出的老照片也能填上拍摄当天的天气。</li>
     <li>该服务为免费开放的公共天气接口，无需 API Key；请求结果仅用于在你的日记中写入一行天气快照。</li>
     <li>请求不包含你的姓名、账号、设备标识或日记内容，我们也不保存这些请求记录。</li>
     <li>Open-Meteo 作为一个独立的第三方服务，其数据处理遵循其自身的隐私政策。</li>
@@ -181,7 +181,7 @@
 
     <h2>3. Network usage</h2>
     <ul>
-      <li><strong>Weather lookup (on your action):</strong> your current <strong>latitude/longitude</strong> is sent to the public weather service <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> to return the current temperature and condition. No name, account, device identifier or diary content is included.</li>
+      <li><strong>Weather lookup (on your action):</strong> the location's <strong>latitude/longitude</strong> is sent to the public weather service <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> to return the temperature and condition at that time. Current conditions use its live forecast API; past dates use its historical archive API, so older photos brought in through Photo Journal can be filled with the weather of the day they were taken. No name, account, device identifier or diary content is included.</li>
       <li><strong>System geocoding:</strong> converting coordinates to a place name uses the operating system's geocoder (Apple's <code>CLGeocoder</code> on iOS).</li>
       <li><strong>Cloud backup (member, off by default):</strong> you enter your own WebDAV / S3 storage. The archive is <strong>AES-256 encrypted on your device</strong> before upload; data goes directly from your device to your own storage, never through us.</li>
       <li><strong>In-app purchase:</strong> payment is handled by the Apple App Store / Google Play. We never receive your payment details; membership status is stored on your device, and is checked once with the store when a subscription expires to see whether it was renewed.</li>
